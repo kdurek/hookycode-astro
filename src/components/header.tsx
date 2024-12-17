@@ -33,7 +33,10 @@ export const Header = () => {
         </div>
 
         <Sheet>
-          <SheetTrigger className="flex items-center justify-center bg-black-800 px-[38px] py-7 text-background">
+          <SheetTrigger
+            aria-label="Nav"
+            className="flex items-center justify-center bg-black-800 px-[38px] py-7 text-background"
+          >
             <Menu />
           </SheetTrigger>
           <SheetContent className="flex h-full flex-col justify-between pl-8">
@@ -78,6 +81,7 @@ export const Header = () => {
                   <li key={social.id}>
                     <a
                       href={social.link}
+                      title={social.title}
                       className="text-white transition-all duration-300 hover:text-primary"
                     >
                       {social.icon}

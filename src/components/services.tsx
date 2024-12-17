@@ -99,6 +99,7 @@ export const Services = () => {
           <div className="group flex h-full flex-col flex-wrap justify-between rounded-lg bg-black-800 px-6 py-7">
             <div className="relative flex flex-wrap justify-end">
               <a
+                title="hookycode@gmail.com"
                 href="mailto:hookycode@gmail.com"
                 className="group-hover:animate-arrow-move-up"
               >

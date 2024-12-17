@@ -60,19 +60,14 @@ export const Projects = () => {
                     </a>
                   ))}
                 </div> */}
-              <div className="group flex flex-wrap items-center justify-between text-black-800 hover:text-primary">
-                <h4 className="text-center font-syne text-[20px] font-bold capitalize leading-10 lg:text-[24px] xl:text-[32px]">
-                  <a className="transition-all" href={project.link}>
+              <a href={project.link}>
+                <div className="group flex flex-wrap items-center justify-between text-black-800 hover:text-primary">
+                  <h4 className="transition-all text-center font-syne text-[20px] font-bold capitalize leading-10 lg:text-[24px] xl:text-[32px]">
                     {project.title}
-                  </a>
-                </h4>
-                <a
-                  className="group-hover:animate-arrow-move-up"
-                  href={project.link}
-                >
-                  <ArrowUpRight />
-                </a>
-              </div>
+                  </h4>
+                  <ArrowUpRight className="group-hover:animate-arrow-move-up" />
+                </div>
+              </a>
             </div>
           </div>
         ))}

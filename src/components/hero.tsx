@@ -112,6 +112,7 @@ export const Hero = () => {
                   <li key={social.id}>
                     <a
                       href={social.link}
+                      title={social.title}
                       className="text-black-800 transition-colors duration-500 hover:text-primary"
                     >
                       {social.icon}

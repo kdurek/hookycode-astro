@@ -37,6 +37,7 @@ export const Footer = () => {
                     <li key={social.id}>
                       <a
                         href={social.link}
+                        title={social.title}
                         className="text-white transition-all duration-300 hover:text-primary"
                       >
                         {social.icon}
@@ -50,17 +51,19 @@ export const Footer = () => {
               <h3 className="font-syne text-xl font-bold text-white">
                 Szukasz wykonawcy?
               </h3>
-              <div className="flex items-center gap-2 justify-between">
+              <a
+                title="hookycode@gmail.com"
+                href="mailto:hookycode@gmail.com"
+                className="flex items-center gap-2 justify-between"
+              >
                 <p className="font-syne text-lg font-bold leading-none text-primary sm:text-2xl">
                   hookycode@gmail.com
                 </p>
-                <a
-                  href="mailto:hookycode@gmail.com"
+                <ArrowUpRight
+                  size={32}
                   className="text-white group-hover:animate-arrow-move-up group-hover:text-primary ml-3"
-                >
-                  <ArrowUpRight size={32} />
-                </a>
-              </div>
+                />
+              </a>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6">
