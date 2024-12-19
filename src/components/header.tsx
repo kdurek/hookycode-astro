@@ -14,7 +14,11 @@ const links = [{ id: 1, name: "Strona główna" }];
 
 export const Header = () => {
   return (
-    <header className="absolute left-0 top-0 z-10 w-full xl:pl-12">
+    <header
+      className="absolute left-0 top-0 z-10 w-full xl:pl-12"
+      data-aos="fade-down"
+      data-aos-delay="1600"
+    >
       <div className="flex pl-4 xl:pl-0">
         <div className="flex flex-1 items-center justify-between border-b border-black-800/40">
           <a href="/" className="font-syne text-2xl font-bold text-black-800">

@@ -12,7 +12,7 @@ export const Resume = () => (
       defaultValue="about"
       className="grid grid-cols-12 lg:gap-[60px] xl:gap-[100px]"
     >
-      <div className="col-span-12 lg:col-span-5">
+      <div className="col-span-12 lg:col-span-5" data-aos="fade-up">
         <div className="mb-4 flex flex-col flex-wrap font-syne font-bold leading-none">
           <span className="text-xl text-primary">Curriculum Vitae</span>
           <h3 className="relative z-[1] text-4xl tracking-[-1.5px] text-black-800 before:absolute before:left-0 before:top-[2px] before:z-[-1] before:block before:size-[36px] before:rounded-full before:bg-primary lg:text-5xl lg:before:size-[48px] xl:text-[60px] xl:before:size-[60px]">
@@ -46,7 +46,11 @@ export const Resume = () => (
           </TabsTrigger>
         </TabsList>
       </div>
-      <div className="col-span-12 lg:col-span-7">
+      <div
+        className="col-span-12 lg:col-span-7"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         <TabsContent value="about">
           <About />
           <Sparkles size={48} className="ml-auto mt-14 text-primary" />

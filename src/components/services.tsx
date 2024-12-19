@@ -15,38 +15,47 @@ const services = [
     id: 1,
     title: "Wizytówki",
     icon: <IdCard className="text-primary" />,
+    delay: 500,
   },
   {
     id: 2,
     title: "Strony",
     icon: <PanelTop className="text-primary" />,
+    delay: 700,
   },
   {
     id: 3,
     title: "Aplikacje",
     icon: <Smartphone className="text-primary" />,
+    delay: 900,
   },
   {
     id: 4,
     title: "Konsultacje",
     icon: <MessagesSquare className="text-primary" />,
+    delay: 500,
   },
   {
     id: 5,
     title: "Responsywność",
     icon: <MonitorSmartphone className="text-primary" />,
+    delay: 700,
   },
   {
     id: 6,
     title: "Pozycjonowanie",
     icon: <Search className="text-primary" />,
+    delay: 900,
   },
 ];
 
 export const Services = () => {
   return (
     <BlockWrapper id="services">
-      <div className="mb-12 grid grid-cols-12 items-center gap-6 2xl:gap-0">
+      <div
+        className="mb-12 grid grid-cols-12 items-center gap-6 2xl:gap-0"
+        data-aos="fade-up"
+      >
         <div className="col-span-12 lg:col-span-6 xl:col-span-6">
           <div className="flex flex-col flex-wrap gap-y-2 font-syne font-bold leading-none">
             <span className="text-xl text-primary">Usługi</span>
@@ -68,11 +77,13 @@ export const Services = () => {
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-12 xl:col-span-8">
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {services.map((service) => {
+            {services.map((service, index) => {
               return (
                 <div
                   key={service.id}
                   className="group rounded-lg bg-black-500 px-6 py-7 transition-all hover:bg-background hover:shadow-2xl"
+                  data-aos="fade-up"
+                  data-aos-delay={service.delay}
                 >
                   <div className="mb-8 flex size-12 flex-wrap items-center justify-center rounded-full bg-background shadow transition-all group-hover:bg-black-500">
                     {service.icon}
@@ -95,7 +106,11 @@ export const Services = () => {
           </div>
         </div>
 
-        <div className="col-span-12 xl:col-span-4">
+        <div
+          className="col-span-12 xl:col-span-4"
+          data-aos="zoom-in"
+          data-aos-delay="1000"
+        >
           <div className="group flex h-full flex-col flex-wrap justify-between rounded-lg bg-black-800 px-6 py-7">
             <div className="relative flex flex-wrap justify-end">
               <a

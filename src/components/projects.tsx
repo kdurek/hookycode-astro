@@ -9,6 +9,7 @@ const projects = [
     tags: ["strona"],
     image: "/assets/pop-media.webp",
     link: "https://pop-media.pl",
+    delay: 300,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const projects = [
     tags: ["strona"],
     image: "/assets/klinck.webp",
     link: "https://klinck.pl",
+    delay: 500,
   },
 ];
 
@@ -41,7 +43,7 @@ export const Projects = () => {
             key={project.id}
             className="col-span-12 md:col-span-6"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay={project.delay}
           >
             <img
               src={project.image}

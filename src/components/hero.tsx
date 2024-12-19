@@ -126,9 +126,10 @@ export const Hero = () => {
 
         <div className="hidden md:block">
           <img
+            className="object-cover absolute bottom-0 right-0 size-full max-h-[80%] md:max-w-[460px] lg:max-w-[580px] xl:max-w-[650px]"
+            data-aos="fade-left"
             src="/avatar.svg"
             alt="hero"
-            className="object-cover absolute bottom-0 right-0 size-full max-h-[80%] md:max-w-[460px] lg:max-w-[580px] xl:max-w-[650px]"
           />
         </div>
       </div>
