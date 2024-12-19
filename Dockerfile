@@ -2,6 +2,7 @@ FROM node:lts-alpine AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
+RUN apk add --no-cache curl
 WORKDIR /app
 
 # By copying only the package.json and package-lock.json here, we ensure that the following `-deps` steps are independent of the source code.
