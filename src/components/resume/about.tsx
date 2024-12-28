@@ -28,8 +28,8 @@ const about = [
 
 export const About = () => (
   <div className="grid grid-cols-1">
-    <h4 className="mb-6 font-syne text-2xl font-bold text-black-800 lg:text-[32px]">
-      Jestem z Polski
+    <h4 className="mb-10 font-syne text-2xl font-bold text-black-800 lg:text-[32px]">
+      Stwórzmy razem stronę internetową, która przyciągnie klientów
     </h4>
     <p className="mb-7 text-lg text-black-text-800">
       Oferuję usługi tworzenia nowoczesnych i funkcjonalnych stron

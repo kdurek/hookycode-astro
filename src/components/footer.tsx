@@ -3,12 +3,27 @@ import { ArrowUp, ArrowUpRight } from "lucide-react";
 import { BlockWrapper } from "@/components/block-wrapper";
 import { socials } from "@/globals";
 
+const cards = [
+  {
+    title: "Szukasz wykonawcy?",
+    prefix: "mailto:",
+    link: "hookycode@gmail.com",
+    text: "Wyślij",
+  },
+  {
+    title: "Stwórzmy wymarzoną stronę internetową",
+    prefix: "mailto:",
+    link: "hookycode@gmail.com",
+    text: "Maila",
+  },
+];
+
 export const Footer = () => {
   return (
     <BlockWrapper wrapperClassName="bg-black-800">
       <footer className="pb-[60px] pt-[80px] lg:pt-[100px] xl:pt-[120px]">
         <div className="overflow-x-hidden" data-aos="flip-down">
-          <div className="flex flex-col justify-between gap-12 md:grid-cols-2 lg:grid-cols-3 lg:flex-row lg:gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-6">
             <div>
               <h3 className="font-syne text-4xl font-bold tracking-[-1.5px] text-white lg:text-5xl xl:text-[64px]">
                 <span className="relative z-[1] before:absolute before:left-0 before:top-[8px] before:z-[-1] before:block before:size-[36px] before:rounded-full before:bg-primary lg:before:size-[48px] xl:before:size-[60px]">
@@ -19,7 +34,7 @@ export const Footer = () => {
               </h3>
               <div className="mt-10 flex flex-wrap items-center">
                 <span className="font-syne text-xl font-bold text-white">
-                  Polska
+                  Sprawdź mnie
                 </span>
                 <span className="mx-8">
                   <svg
@@ -47,24 +62,26 @@ export const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="group flex flex-col justify-between rounded-2xl border px-7 py-9">
-              <h3 className="font-syne text-xl font-bold text-white">
-                Szukasz wykonawcy?
-              </h3>
-              <a
-                title="hookycode@gmail.com"
-                href="mailto:hookycode@gmail.com"
-                className="flex items-center gap-2 justify-between"
-              >
-                <p className="font-syne text-lg font-bold leading-none text-primary sm:text-2xl">
-                  hookycode@gmail.com
-                </p>
-                <ArrowUpRight
-                  size={32}
-                  className="text-white group-hover:animate-arrow-move-up group-hover:text-primary ml-3"
-                />
-              </a>
-            </div>
+            {cards.map((card) => (
+              <div className="group flex flex-col justify-between rounded-2xl border px-7 gap-6 py-9">
+                <h3 className="font-syne text-xl font-bold text-white">
+                  {card.title}
+                </h3>
+                <a
+                  title={card.link}
+                  href={card.prefix + card.link}
+                  className="flex items-center gap-2 justify-between"
+                >
+                  <p className="font-syne text-lg font-bold leading-none text-primary sm:text-2xl">
+                    {card.text}
+                  </p>
+                  <ArrowUpRight
+                    size={32}
+                    className="text-white group-hover:animate-arrow-move-up group-hover:text-primary ml-3"
+                  />
+                </a>
+              </div>
+            ))}
           </div>
           <div className="grid grid-cols-1 gap-6">
             <div className="py-[72px]">

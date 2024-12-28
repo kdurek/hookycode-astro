@@ -19,7 +19,7 @@ const services = [
   },
   {
     id: 2,
-    title: "Strony",
+    title: "Strony internetowe",
     icon: <PanelTop className="text-primary" />,
     delay: 700,
   },
@@ -43,7 +43,7 @@ const services = [
   },
   {
     id: 6,
-    title: "Pozycjonowanie",
+    title: "Pozycjonowanie SEO",
     icon: <Search className="text-primary" />,
     delay: 900,
   },
@@ -56,7 +56,7 @@ export const Services = () => {
         className="mb-12 grid grid-cols-12 items-center gap-6 2xl:gap-0"
         data-aos="fade-up"
       >
-        <div className="col-span-12 lg:col-span-6 xl:col-span-6">
+        <div className="col-span-12 lg:col-span-5 xl:col-span-5">
           <div className="flex flex-col flex-wrap gap-y-2 font-syne font-bold leading-none">
             <span className="text-xl text-primary">Usługi</span>
             <h3 className="relative text-4xl tracking-[-1.5px] text-black-800 before:absolute before:left-0 before:top-[2px] before:z-[-1] before:block before:size-[36px] before:rounded-full before:bg-primary lg:text-5xl lg:before:size-[48px] xl:text-[60px] xl:before:size-[60px]">
@@ -64,12 +64,11 @@ export const Services = () => {
             </h3>
           </div>
         </div>
-        <div className="col-span-12 lg:col-span-6 xl:col-span-6">
-          <p className="text-muted-foreground">
-            Jako full stack developer, integruję technologie front-end i
-            back-end, aby dostarczać solidne i skalowalne rozwiązania. Moja
-            wiedza obejmuje różne platformy i frameworki, zapewniając
-            kompleksowe i efektywne procesy rozwoju.
+        <div className="col-span-12 lg:col-span-7 xl:col-span-7">
+          <p className="text-muted-foreground text-lg">
+            Tworzę nowoczesne i funkcjonalne strony internetowe dla firm i
+            klientów indywidualnych, łącząc wygląd i funkcjonalność, aby
+            dostarczać skalowalne i efektywne rozwiązania.
           </p>
         </div>
       </div>

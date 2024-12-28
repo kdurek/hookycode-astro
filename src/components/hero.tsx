@@ -47,7 +47,7 @@ export const Hero = () => {
               data-aos="fade-right"
               data-aos-delay="800"
             >
-              Full Stack Developer | Polska
+              Full Stack Developer | Strony internetowe
             </p>
 
             <div className="mb-[50px] flex flex-wrap md:mb-[60px] xl:mb-[70px] 2xl:mb-[80px]">
