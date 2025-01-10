@@ -26,7 +26,7 @@ export const Header = () => {
           </a>
 
           <a
-            href="mailto:hookycode@gmail.com"
+            href="mailto:kontakt@hookycode.pl"
             className="group mr-2 flex items-center px-3 py-[6px] font-bold leading-none transition-all duration-300 hover:text-primary"
           >
             Pogadajmy

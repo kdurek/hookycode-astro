@@ -53,7 +53,7 @@ export const Hero = () => {
             <div className="mb-[50px] flex flex-wrap md:mb-[60px] xl:mb-[70px] 2xl:mb-[80px]">
               <span data-aos="fade-right" data-aos-delay="1000">
                 <a
-                  href="mailto:hookycode@gmail.com"
+                  href="mailto:kontakt@hookycode.pl"
                   className={cn(
                     buttonVariants({
                       size: "xl",

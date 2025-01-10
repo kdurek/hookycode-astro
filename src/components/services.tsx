@@ -113,8 +113,8 @@ export const Services = () => {
           <div className="group flex h-full flex-col flex-wrap justify-between rounded-lg bg-black-800 px-6 py-7">
             <div className="relative flex flex-wrap justify-end">
               <a
-                title="hookycode@gmail.com"
-                href="mailto:hookycode@gmail.com"
+                title="kontakt@hookycode.pl"
+                href="mailto:kontakt@hookycode.pl"
                 className="group-hover:animate-arrow-move-up"
               >
                 <ArrowUpRight size={80} className="text-primary" />
@@ -126,7 +126,7 @@ export const Services = () => {
                 NAPISZ!
               </span>
               <h4 className="font-syne text-xl font-bold leading-none text-white md:text-2xl">
-                hookycode@gmail.com
+                kontakt@hookycode.pl
               </h4>
             </div>
           </div>

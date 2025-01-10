@@ -7,13 +7,13 @@ const cards = [
   {
     title: "Szukasz wykonawcy?",
     prefix: "mailto:",
-    link: "hookycode@gmail.com",
+    link: "kontakt@hookycode.pl",
     text: "Wyślij",
   },
   {
     title: "Stwórzmy wymarzoną stronę internetową",
     prefix: "mailto:",
-    link: "hookycode@gmail.com",
+    link: "kontakt@hookycode.pl",
     text: "Maila",
   },
 ];

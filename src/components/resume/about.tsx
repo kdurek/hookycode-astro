@@ -12,7 +12,7 @@ const about = [
   {
     id: 3,
     key: "Email",
-    value: "hookycode@gmail.com",
+    value: "kontakt@hookycode.pl",
   },
   {
     id: 4,
